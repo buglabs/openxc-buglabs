@@ -3,7 +3,8 @@ OpenXC Monsoon Freeboard Template
 
 # Table of Contents
 *   [How to Use](#how-to-use)
-*   [Key Sources](#key-source-files)
+*   [Creating a Clone](#creating-a-clone)
+*   [Source Files](#source-files)
 
 How to Use
 -----------
@@ -21,10 +22,9 @@ As additional cars turn on their wipers, the widening areas of red can be interp
 ![screen3](../documentation/images/3.png)
 
 
-Key Source Files
-----------------
+Creating a Clone
+--------------------------------
 
-##Introduction
 To use this template as a base for a new dashboard, first make sure you are signed in to your freeboard developer account then click Clone in the bottom right corner of the window.
 ![screen4](../documentation/images/4.png)
 
@@ -33,7 +33,25 @@ This will create a new Freeboard instance of the template, accessible in your ac
 
 Clicking the Developer Tools link on the bottom right of the window will show the included sources that power the application.  
 
-![screen6](../documentation/images/6.png)![screen7](../documentation/images/7.png)
+![screen6](../documentation/images/6.png)
+![screen7](../documentation/images/7.png)
 
 
- 
+Source Files
+------------
+
+##monsoon_datasource.js
+
+The Monsoon Datasource is a customized version of the [OpenXC Datasource](../openXCdatasource.js)  that takes one input json data file, subdivides it into 20 sub-datasources and iterates through to any connected widget at the user-defined refresh rate.  Widgets can attach to a sub-datasource by adding the sub-datasource index to the datasource name in the widget's Value field. (see screenshot below)
+![screen8](../documentation/images/8.png)
+
+[Line 23](./monsoon_datasource.js#L23) sets the number of data points between each sub-division
+
+
+##monsoon_widget.js
+
+The Monsoon Widget is a custom version of the google maps widget that accepts input from up to 20 different datasources, and draws a car icon to represent each attached datasource.  If there is a windshield-wiper signal present in any of the datasources' payload, the car icon will turn red if the value of the signal is `true`.
+
+##monsoonapp.js
+
+Javascript responsible for implementing click action on monsoon widget, with setting Freeboard Datasource configuration.  
