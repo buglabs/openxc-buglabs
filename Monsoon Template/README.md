@@ -40,7 +40,7 @@ Clicking the Developer Tools link on the bottom right of the window will show th
 Source Files
 ------------
 
-##monsoon_datasource.js
+###monsoon_datasource.js
 
 The Monsoon Datasource is a customized version of the [OpenXC Datasource](../openXCdatasource.js)  that takes one input json data file, subdivides it into 20 sub-datasources and iterates through to any connected widget at the user-defined refresh rate.  Widgets can attach to a sub-datasource by adding the sub-datasource index to the datasource name in the widget's Value field. (see screenshot below)
 ![screen8](../documentation/images/8.png)
@@ -48,10 +48,18 @@ The Monsoon Datasource is a customized version of the [OpenXC Datasource](../ope
 [Line 23](./monsoon_datasource.js#L23) sets the number of data points between each sub-division
 
 
-##monsoon_widget.js
+###monsoon_widget.js
 
 The Monsoon Widget is a custom version of the google maps widget that accepts input from up to 20 different datasources, and draws a car icon to represent each attached datasource.  If there is a windshield-wiper signal present in any of the datasources' payload, the car icon will turn red if the value of the signal is `true`.
 
-##monsoonapp.js
+###monsoonapp.js
 
-Javascript responsible for implementing click action on monsoon widget, with setting Freeboard Datasource configuration.  
+Javascript responsible for implementing click action on monsoon widget, with setting Freeboard Datasource configuration.
+
+###trace files
+
+Processed json data files derived from the [Highway Commute and Local Stop](http://openxcplatform.com.s3.amazonaws.com/traces/localwithgps.json) OpenXC trace.  Used python scripts in [openxc json converter](../scripts/openxc_json_converter.py) to convert original trace file to valid JSON object, then [signal extractor](../scripts/signal_extractor.py) and [normalizer](../scripts/normalizer.py) to create individual json data files for optimal performance and codability.
+
+###custom.css
+
+Minor customizations to make background and table headers black
