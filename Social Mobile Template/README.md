@@ -32,9 +32,9 @@ After loading the cloned dashboard, the configuration dialog will pop-up.
 
 In emulator mode, the template is set up to respond to devices which are connected via the Try It Now feature on the dweet.io website.  We recommend the following set-up in order to experience all of the template's functionality from the comforts of your desk:
 
-Master device - your laptop
-SubUser1 - your smartphone
-SubUser2 - random smartphone from dweet.io/see
+*    Master device - your laptop
+*    SubUser1 - your smartphone
+*    SubUser2 - random smartphone from dweet.io/see
 
 
 Begin by navigating to http://dweet.io on your Master device.  Click the orange Try It Now feature (making sure to *enable location services* if it is not already).  
