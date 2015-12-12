@@ -2,7 +2,7 @@
     For version 1 of OpenXC Social Template, we use this datasource simply to store the
     master's phone number, to which alerts are sent.  For future versions, we will 
     uncomment the commented lines to enable communication TO the dashboard from the 
-    master's phone.
+    master's phone via the twilio API.
 */
   
 (function () {
