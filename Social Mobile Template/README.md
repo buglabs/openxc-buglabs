@@ -2,27 +2,34 @@ OpenXC Social Freeboard Template
 =================================
 
 # Table of Contents
-*   [How to Use](#how-to-use)
+*   [Introduction](#introduction)
+* [How to Use](#how-to-use)
+	* [Emulator Mode](#emulator-mode)
+	* [Live Mode](#live-mode)
 *   [Source Files](#source-files)
 
-How to Use
------------
-
-The OpenXC Social Template is a dashboard application that allows a user to monitor two
-other OpenXC clients and be alerted for any mishaps along their journey.
+Introduction
+============
+The OpenXC Social Template is a dashboard application that allows a user to monitor two other OpenXC clients and be alerted for any mishaps along their journey.
 
 There are two versions of the template:
 
-LIVE DATA MODE:  
+[EMULATOR MODE](#emulator-mode):
+https://openxc.freeboard.io/board/SvtcP0
+The Emulator offers the ability to demo the functionality of the application without needing live OpenXC device data.  By using Dweet.io's Try it Now feature on any device with an accelerometer (ie: smartphones, laptops), you can tilt your device to emulate changes in a vehicle sensors
+
+[LIVE DATA MODE](#live-data-mode):  
 https://openxc.freeboard.io/board/cYoEd6
 
 The Live Data template responds to data coming from real OpenXC devices
 
-EMULATOR MODE:
-https://openxc.freeboard.io/board/SvtcP0
-The Emulator offers the ability to demo the functionality of the application without needing live OpenXC device data.  By using Dweet.io's Try it Now feature on any device with an accelerometer (ie: smartphones, laptops), you can tilt your device to simulate changes 
+How to Use
+==========
 
-Begin by logging in to your OpenXC account, then navigate to the chosen version of the template.  Click OK on the dialog, then click Clone to copy the template into your account. 
+Emulator Mode
+-------------
+
+Begin by logging in to your OpenXC account, then navigate to https://openxc.freeboard.io/board/SvtcP0.  Click OK on the dialog, then click Clone to copy the template into your account. 
 
 ![screen1](./doc_images/1.png)
 
@@ -80,4 +87,44 @@ For the emulator version, the "Speed, Acceleration, and Fuel Level" widgets are 
 ![screen12](./doc_images/12.png)
  
 
+Live Mode
+---------
 
+Begin by connecting three OpenXC devices to Dweet.io using the special Dweet.io-integrated version of the OpenXC Enabler App (available in the [Releases](https://github.com/buglabs/openxc-buglabs/releases) tab).
+
+Login to your OpenXC account, then navigate to https://openxc.freeboard.io/board/cYoEd6.  Click OK on the dialog, then click Clone to copy the template into your account. 
+
+![screen1](./doc_images/1.png)
+
+After loading the cloned dashboard, the configuration dialog will pop-up.
+
+![screen2](./doc_images/2.png)
+
+Enter in the thing-names corresponding to your various devices, as well as your mobile phone number into the SMS Alert Phone Number field (with the indicated format).  
+
+![screen7](./doc_images/7.png)
+
+Complete the configuration by adding in values for the alert thresholds.  For testing we recommend the following settings:
+
+![screen8](./doc_images/8.png)
+
+Click OK to save the configuration.  You will then be prompted to Refresh the page.
+
+![screen9](./doc_images/9.png)
+
+After refreshing, you should notice the map widget centered on the Master location, and the sparkline widgets populating (**Note: the sparklines will not populate unless all three OpenXC devices are connected, or there is at least one historical dweet available for each device)**.  Click the wrench icon to minimize the dashboard editing zone.
+
+The dashboard is now fully set-up!  Be sure to leave the browser window open in order to receive SMS alerts for the various alert conditions.
+
+![screen10](./doc_images/10.png)
+
+Source Files
+--------------
+###openXCSocialApp.js
+Contains all application logic to implement alert functionality, as well as the additional UI/UX elements for the template configuration.   
+
+###openXCSocialMapWidget.js
+Customized version of the Freeboard.io Google Maps widget that displays three separate entities on one map.  Also includes optimizations that enable larger maps sizes than the stock maps widget.
+
+###phoneDatasource.js
+ For version 1 of OpenXC Social Template, we use this datasource simply to store the master's phone number, to which alerts are sent.  For future versions, we will enable the commented lines to allow communication TO the dashboard from the master's phone via the Dweet.io-Twilio integration APIs.
