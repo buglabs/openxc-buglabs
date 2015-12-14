@@ -21,7 +21,6 @@ This version shows a simulation of 20 fleet vehicles driving through inclement c
 
 LIVE DATA MODE:
 https://openxc.freeboard.io/board/pMhei6
-
 The Live Data template responds to data coming from real OpenXC devices.  Add as many vehicles as you want via the customized OpenXC Monsoon Map Widget.
 
 How To Use 
@@ -32,11 +31,11 @@ Begin by visiting https://openxc.freeboard.io/board/5OQ4XW
 The visualization will start automatically.
 
 The dashboard shows a fleet of 20 vehicles traveling in variable conditions on a highway.
-![screen1](./doc_images/Simulation/1.png)
+![screen1](./doc_images/Simulator/1.png)
 The car icons turn red if the windshield wipers are activated, or green if not.
-![screen2](./doc_images/Simulation/2.png)  
+![screen2](./doc_images/Simulator/2.png)  
 As additional cars turn on their wipers, the widening areas of red can be interpreted as a heat map indicating areas where it is raining.  A user can click any car to see its individual speed, accelerometer pedal position, and brake status represented in the guage and indicator light widgets in the bottom row
-![screen3](./doc_images/Simulation/3.png)
+![screen3](./doc_images/Simulator/3.png)
 
 
 Live Data Mode
@@ -45,9 +44,27 @@ Begin by signing in to your openxc freeboard account, then navigate to the the h
 Click Clone in the bottom right corner of the window.
 ![screen1](./doc_images/Live/1.png)
 
-This will create a new Freeboard instance of the template, accessible in your account.  You will now see the editing toolbars, and a new URL that links to your personal instance.
-![screen5](./doc_images/5.png)
+This will create a new instance of the template, accessible in your account (at a new URL).
 
+We now need to add in a Dweet.io Datasource for every openXC device you wish to connect to the map.  Click Add at the Datasources section.
+![screen2](./doc_images/Live/2.png)
+Choose the Dweet.io Datasource
+![screen3](./doc_images/Live/3.png)
+Name the datasource (we recommend something like 'car_1, car_2, car_3, etc') and enter in the thing-name.
+![screen4](./doc_images/Live/4.png)
+Repeate the steps above for each device.
+![screen6](./doc_images/Live/6.png)
+When all devices have been added as Datasource, we now need to attach the Datasources to the map.  Mouse over the top right corner of the map area, and click on the wrench icon that pops up (**note** pay special attention to not accidentally click the other widget/pan edit icons nearby).
+![screen7](./doc_images/Live/7.png)
+Click the [+Datasources] button and choose one of the datasources created in the previous steps from the dropdown.  Do not choose any of the deeper levels.
+![screen8](./doc_images/Live/8.png) 
+Click the [+Add] button to add additional Datasources.
+![screen9](./doc_images/Live/9.png)   
+![screen10](.doc_images/Live/10.png)
+Click Save and refresh the page in your browser.  You will now see all of your devices populated in the map (**Note:** you may need to zoom out in the map to find your devices)
+![screen11](./doc_images/Live/11.png).
+Click on any one of the vehicle icons to see its real-time accelerator pedal position, brake pedal status, and speed populated in the widgets below the map.
+![screen12](./doc_images/Live/12.png)
 
 
 Source Files
