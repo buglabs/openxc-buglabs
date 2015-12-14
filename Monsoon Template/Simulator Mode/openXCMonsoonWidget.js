@@ -100,7 +100,7 @@
             function initializeMap() {
                 var mapOptions = {
                     zoom: 11,
-                    center: new google.maps.LatLng(42.269634, -83.245415),
+                    center: new google.maps.LatLng(42.299895, -83.271874),
                     disableDefaultUI: true,
                     draggable: true,
                     styles: [

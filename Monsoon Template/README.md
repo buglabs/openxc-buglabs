@@ -19,11 +19,11 @@ SIMULATION MODE:
 https://openxc.freeboard.io/board/5OQ4XW 
 This version shows a simulation of 20 fleet vehicles driving through inclement conditions on a freeway outside of Denver.  This offers the ability to interact with the application without the need of a fleet of OpenXC devices.  
 
-LIVE DATA MODE:
+LIVE MODE:
 https://openxc.freeboard.io/board/pMhei6
 The Live Data template responds to data coming from real OpenXC devices.  Add as many vehicles as you want via the customized OpenXC Monsoon Map Widget.
 
-How To Use 
+How To Use
 ==========
 Emulator Mode
 ------------------
@@ -60,7 +60,7 @@ Click the [+Datasources] button and choose one of the datasources created in the
 ![screen8](./doc_images/Live/8.png) 
 Click the [+Add] button to add additional Datasources.
 ![screen9](./doc_images/Live/9.png)   
-![screen10](.doc_images/Live/10.png)
+![screen10](./doc_images/Live/10.png)
 Click Save and refresh the page in your browser.  You will now see all of your devices populated in the map (**Note:** you may need to zoom out in the map to find your devices)
 ![screen11](./doc_images/Live/11.png).
 Click on any one of the vehicle icons to see its real-time accelerator pedal position, brake pedal status, and speed populated in the widgets below the map.
