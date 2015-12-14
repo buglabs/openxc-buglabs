@@ -38,7 +38,7 @@ As additional cars turn on their wipers, the widening areas of red can be interp
 ![screen3](./doc_images/Simulator/3.png)
 
 
-Live Data Mode
+Live Mode
 ------------------
 Begin by signing in to your openxc freeboard account, then navigate to the the host dashboard link at https://openxc.freeboard.io/board/pMhei6.  
 Click Clone in the bottom right corner of the window.
