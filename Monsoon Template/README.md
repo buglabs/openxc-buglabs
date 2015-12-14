@@ -6,7 +6,6 @@ OpenXC Monsoon Freeboard Template
 *   [How to Use](#how-to-use)
 	* [Emulator Mode](#emulator-mode)
 	* [Live Mode](#live-mode)
-*   [Creating a Clone](#creating-a-clone)
 *   [Source Files](#source-files)
 
 Introduction
