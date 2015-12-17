@@ -15,18 +15,4 @@ How to Use
 
 Begin by signing in to your OpenXC freeboard account, then navigate to the main dashboard link at https://openxc.freeboard.io/board/tVzyK6.  Click [Clone] to save an editable copy of the template into your account.
 
-[!screen1](./doc_images/1.png)
-
-Click "Driver A" in the datasources list.
-
-[!screen2](./doc_images/2.png)
-
-Input the thing-name corresponding to your Driver A's OpenXC device in the dialog, then click SAVE.
-
-[!screen3](./doc_images/3.png)
-
-You will now see Driver A's widgets populating in the first column.  Repeat the above steps for each device you have.
-
-[!screen4](./doc_images/4.png)
-
   
