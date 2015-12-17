@@ -1,4 +1,4 @@
-OpenXC Base Template
+OpenXC Basic Template
 =================================
 
 # Table of Contents
