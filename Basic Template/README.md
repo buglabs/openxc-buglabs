@@ -7,7 +7,7 @@ OpenXC Base Template
 
 Introduction
 ============
-The Base Template provides a pre-configured set of widgets to view live data from up to four OpenXC devices on one dashboard.  Use this as a reference for building custom dashboards that display the data and sensor information in a way that suits your needs.
+The Basic Template provides a pre-configured set of widgets to view live data from up to four OpenXC devices on one dashboard.  Use this as a reference for building custom dashboards that display the data and sensor information in a way that suits your needs.
 
 How to Use
 ============
