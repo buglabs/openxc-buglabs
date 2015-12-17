@@ -33,7 +33,7 @@ The dashboard shows a fleet of 20 vehicles traveling in variable conditions on a
 ![screen1](./doc_images/Emulator/1.png)
 The car icons turn red if the windshield wipers are activated, or green if not.
 ![screen2](./doc_images/Emulator/2.png)  
-As additional cars turn on their wipers, the widening areas of red can be interpreted as a heat map indicating areas where it is raining.  A user can click any car to see its individual speed, accelerometer pedal position, and brake status represented in the guage and indicator light widgets in the bottom row
+As additional cars turn on their wipers, the widening areas of red can be interpreted as a heat map indicating areas where it is raining.  A user can click any car to see its individual speed, accelerometer pedal position, and brake status represented in the guage and indicator light widgets in the bottom row.
 ![screen3](./doc_images/Emulator/3.png)
 
 
@@ -45,9 +45,9 @@ Click Clone in the bottom right corner of the window.
 
 This will create a new instance of the template, accessible in your account (at a new URL).
 
-We now need to add in a Dweet.io Datasource for every openXC device you wish to connect to the map.  Click Add at the Datasources section.
+We now need to add in a Dweet.io Datasource for every OpenXC device you wish to connect to the map.  Click Add at the Datasources section.
 ![screen2](./doc_images/Live/2.png)
-Choose the Dweet.io Datasource
+Choose the Dweet.io Datasource.
 ![screen3](./doc_images/Live/3.png)
 Name the datasource (we recommend something like 'car_1, car_2, car_3, etc') and enter in the thing-name.
 ![screen4](./doc_images/Live/4.png)
@@ -59,9 +59,9 @@ Click the [+Datasources] button and choose one of the datasources created in the
 ![screen8](./doc_images/Live/8.png) 
 Click the [+Add] button to add additional Datasources.
 ![screen9](./doc_images/Live/9.png)
-Then choose the next datasource from the dropdown (again, do not navigate further into the datasource's payload)   
+Then choose the next datasource from the dropdown (again, do not navigate further into the datasource's payload).   
 ![screen10](./doc_images/Live/10.png)
-Click Save and refresh the page in your browser.  You will now see all of your devices populated in the map (**Note:** you may need to zoom out in the map to find your devices)
+Click Save and refresh the page in your browser.  You will now see all of your devices populated in the map (**Note:** you may need to zoom out in the map to find your devices).
 ![screen11](./doc_images/Live/11.png)
 Click on any one of the vehicle icons to see its real-time accelerator pedal position, brake pedal status, and speed populated in the widgets below the map.
 ![screen12](./doc_images/Live/12.png)
@@ -75,7 +75,7 @@ Source Files
 The Monsoon Datasource is a customized version of the [OpenXC Tracefile Datasource](../scripts/openXC-TracefileDatasource.js)  that takes one input JSON data file, subdivides it into 20 sub-datasources and iterates through to any connected widget at the user-defined refresh rate.  Widgets can attach to a sub-datasource by adding the sub-datasource index to the datasource name in the widget's Value field. (see screenshot below)
 ![screen8](./doc_images/8.png)
 
-[Line 23](./Emulator\ Mode/openXCMonsoonDatasource.js#23) sets the number of data points between each sub-division
+[Line 23](./Emulator\ Mode/openXCMonsoonDatasource.js#23) sets the number of data points between each sub-division.
 
 
 ###[openXCMonsoonWidget.js](./Emulator\ Mode/openXCMonsoonWidget.js)
@@ -92,4 +92,4 @@ Processed JSON data files derived from the [Highway Commute and Local Stop](http
 
 ###custom.css
 
-Minor customizations to make background and table headers black
+Minor customizations to make background and table headers black.
