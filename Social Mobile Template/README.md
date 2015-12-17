@@ -16,12 +16,19 @@ There are two versions of the template:
 
 [EMULATOR MODE](#emulator-mode):
 https://openxc.freeboard.io/board/SvtcP0
-The Emulator offers the ability to demo the functionality of the application without needing live OpenXC device data.  By using Dweet.io's Try it Now feature on any device with an accelerometer (ie: smartphones, laptops), you can tilt your device to emulate changes in a vehicle sensors
+The Emulator offers the ability to demo the functionality of the application without needing live OpenXC device data.  By using Dweet.io's Try it Now feature on any device with an accelerometer (ie: smartphones, laptops), you can tilt your device to emulate changes in a vehicle's sensors.
 
 [LIVE DATA MODE](#live-data-mode):  
 https://openxc.freeboard.io/board/cYoEd6
 
-The Live Data template responds to data coming from real OpenXC devices
+The Live Data template responds to data coming from real OpenXC devices.
+
+Three alerts are included: 
+* Distance - Triggered when either Sub User is outside a set proximity from the Master user (Default: 50 miles)
+* Speed - Notifies Master user when either Sub User drives faster than the given speed threshold (Default: 90 MPH)
+* Deceleration - Triggered when a Sub User decreases speed by the set amount between two subsequent updates (Default: 30 MPH)
+
+**Note: In either mode, the template will not function properly unless all three OpenXC devices are connected, or there is at least one historical dweet available for each device)**
 
 How to Use
 ==========
@@ -60,7 +67,7 @@ For SubUser2, click on the Discover link in the top right corner of the dweet.io
 
 The page will load a list of devices currently running on the public version of Dweet.  We want to find another device that is using the Try It Now feature, which also has a location.  To do this, simply activate the Find function of your browser (usually Ctrl + f, or Command + f), and search for the term 'your_latitude'.  Note down the thing name beside that result (unless it is the same thing-name as your Master or SubUser1, in which case you should move to the next search result).
 
-![screen6](./doc_images/6.png))
+![screen6](./doc_images/6.png)
  
 Return to the template configuration screen and enter in the thing-names you retrieved from the previous steps.  Enter in your mobile phone number into the SMS Alert Phone Number field (with the indicated format).  
 
@@ -74,7 +81,7 @@ Click OK to save the configuration.  You will then be prompted to Refresh the pa
 
 ![screen9](./doc_images/9.png)
 
-After refreshing, you should notice the map widget centered on the Master location, and the sparkline widgets populating.  Click the wrench icon to minimize the dashboard editing zone.
+After refreshing, you should notice the map widget centered on the Master location, and the sparkline widgets (e.g. line graphs) populating.  Click the wrench icon to minimize the dashboard editing zone.
 
 ![screen10](./doc_images/10.png)
 
@@ -127,4 +134,4 @@ Contains all application logic to implement alert functionality, as well as the 
 Customized version of the Freeboard.io Google Maps widget that displays three separate entities on one map.  Also includes optimizations that enable larger maps sizes than the stock maps widget.
 
 ###phoneDatasource.js
- For version 1 of OpenXC Social Template, we use this datasource simply to store the master's phone number, to which alerts are sent.  For future versions, we will enable the commented lines to allow communication TO the dashboard from the master's phone via the Dweet.io-Twilio integration APIs.
+ For the current release (version 1.0) of OpenXC Social Template, we use this datasource simply to store the master's phone number, to which alerts are sent.  For future versions, we will enable the commented lines to allow communication TO the dashboard from the master's phone via the Dweet.io-Twilio integration APIs.
