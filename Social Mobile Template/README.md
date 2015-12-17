@@ -1,4 +1,4 @@
-OpenXC Social Freeboard Template
+OpenXC Social freeboard Template
 =================================
 
 # Table of Contents
@@ -17,7 +17,7 @@ There are two versions of the template:
 [EMULATOR MODE](#emulator-mode):  
 https://openxc.freeboard.io/board/SvtcP0
 
-The Emulator Mode offers the ability to demo the functionality of the application without needing live OpenXC device data.  By using Dweet.io's Try it Now feature on any device with an accelerometer (ie: smartphones, laptops), you can tilt your device to emulate changes in a vehicle's sensors.
+The Emulator Mode offers the ability to demo the functionality of the application without needing live OpenXC device data.  By using dweet.io's Try it Now feature on any device with an accelerometer (ie: smartphones, laptops), you can tilt your device to emulate changes in a vehicle's sensors.
 
 [LIVE DATA MODE](#live-data-mode):  
 https://openxc.freeboard.io/board/cYoEd6
@@ -25,11 +25,11 @@ https://openxc.freeboard.io/board/cYoEd6
 The Live Data Mode responds to data coming from real OpenXC devices.
 
 Three alerts are included: 
-* Distance - Triggered when either Sub User is outside a set proximity from the Master user (Default: 50 miles)
-* Speed - Notifies Master user when either Sub User drives faster than the given speed threshold (Default: 90 MPH)
-* Deceleration - Triggered when a Sub User decreases speed by the set amount between two subsequent updates (Default: 30 MPH)
+* Distance - Triggered when either Sub User is outside a set proximity from the Master user. (Default: 50 miles)
+* Speed - Notifies Master user when either Sub User drives faster than the given speed threshold. (Default: 90 MPH)
+* Deceleration - Triggered when a Sub User decreases speed by the set amount between two subsequent updates. (Default: 30 MPH)
 
-**Note:  In either mode, the template will not function properly unless all three OpenXC devices are connected, or there is at least one historical dweet available for each device**
+**Note:  In either mode, the template will not function properly unless all three OpenXC devices are connected, or there is at least one historical dweet available for each device.**
 
 How to Use
 ==========
@@ -66,7 +66,7 @@ For SubUser2, click on the Discover link in the top right corner of the dweet.io
 
 ![screen5](./doc_images/5.png)
 
-The page will load a list of devices currently running on the public version of Dweet.  We want to find another device that is using the Try It Now feature, which also has a location.  To do this, simply activate the Find function of your browser (usually Ctrl + f, or Command + f), and search for the term 'your_latitude'.  Note down the thing name beside that result (unless it is the same thing-name as your Master or SubUser1, in which case you should move to the next search result).
+The page will load a list of devices currently running on the public version of dweet.  We want to find another device that is using the Try It Now feature, which also has a location.  To do this, simply activate the Find function of your browser (usually Ctrl + f, or Command + f), and search for the term 'your_latitude'.  Note down the thing name beside that result (unless it is the same thing-name as your Master or SubUser1, in which case you should move to the next search result).
 
 ![screen6](./doc_images/6.png)
  
@@ -98,7 +98,7 @@ For the emulator version, the "Speed, Acceleration, and Fuel Level" widgets are 
 Live Data Mode
 ---------
 
-Begin by connecting three OpenXC devices to Dweet.io using the special Dweet.io-integrated version of the OpenXC Enabler App (available in the [Releases](https://github.com/buglabs/openxc-buglabs/releases) tab).
+Begin by connecting three OpenXC devices to dweet.io using the special dweet.io-integrated version of the OpenXC Enabler App (available in the [Releases](https://github.com/buglabs/openxc-buglabs/releases) tab).
 
 Login to your OpenXC account, then navigate to https://openxc.freeboard.io/board/cYoEd6.  Click OK on the dialog, then click Clone to copy the template into your account. 
 
@@ -132,7 +132,7 @@ Source Files
 Contains all application logic to implement alert functionality, as well as the additional UI/UX elements for the template configuration.   
 
 ###[openXCSocialMapWidget.js](./openXCSocialMapWidget.js)
-Customized version of the Freeboard.io Google Maps widget that displays three separate entities on one map.  Also includes optimizations that enable larger maps sizes than the stock maps widget.
+Customized version of the freeboard.io Google Maps widget that displays three separate entities on one map.  Also includes optimizations that enable larger maps sizes than the stock maps widget.
 
 ###[phoneDatasource.js](./phoneDatasource.js)
- For the current release (version 1.0) of OpenXC Social Template, we use this datasource simply to store the master's phone number, to which alerts are sent.  For future versions, we will enable the commented lines to allow communication TO the dashboard from the master's phone via the Dweet.io-Twilio integration APIs.
+ For the current release (version 1.0) of OpenXC Social Template, we use this datasource simply to store the master's phone number, to which alerts are sent.  For future versions, we will enable the commented lines to allow communication TO the dashboard from the master's phone via the dweet.io-Twilio integration APIs.
