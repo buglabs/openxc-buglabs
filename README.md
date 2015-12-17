@@ -1,5 +1,5 @@
-# openxc-buglabs
-Projects integrating Ford's OpenXC with Bug Lab's Dweet and Freeboard products
+# OpenXC-Buglabs
+Projects integrating Ford's OpenXC platform with Bug Lab's Dweet.io and Freeboard products
 
 ##[Enabler Dweet.io Android Application](https://github.com/buglabs/openxc-buglabs/releases/tag/0.9)
 Based off of the OpenXC Enabler Android application (v 6.1.6 from Play Store), this pre-release version integrates the sending of live OpenXC data to Dweet.io. Used with the "Live versions" of both Monsoon and Social templates.
