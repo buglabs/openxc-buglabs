@@ -18,3 +18,6 @@ Tweet your live OpenXC data directly from freeboard.
 
 ##[Scripts](./scripts)
 Useful Python scripts for converting raw OpenXC trace files into JSON objects that can be used with freeboard.
+
+##[Video Tutorial](https://github.com/buglabs/openxc-buglabs/releases/tag/0.9)
+Learn how to covert your OpenXC data from the Enabler Android application (v 6.1.6 from Play Store), live OpenXC data, or data from  dweet.io. This tutorial also covers how to manipulate the freeboard templates.
