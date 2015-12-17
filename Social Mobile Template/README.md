@@ -5,7 +5,7 @@ OpenXC Social Freeboard Template
 *   [Introduction](#introduction)
 * [How to Use](#how-to-use)
 	* [Emulator Mode](#emulator-mode)
-	* [Live Mode](#live-mode)
+	* [Live Data Mode](#live-data-mode)
 *   [Source Files](#source-files)
 
 Introduction
@@ -14,7 +14,7 @@ The OpenXC Social Template is a dashboard application that allows a user to moni
 
 There are two versions of the template:
 
-[EMULATOR MODE](#emulator-mode):
+[EMULATOR MODE](#emulator-mode):  
 https://openxc.freeboard.io/board/SvtcP0
 
 The Emulator Mode offers the ability to demo the functionality of the application without needing live OpenXC device data.  By using Dweet.io's Try it Now feature on any device with an accelerometer (ie: smartphones, laptops), you can tilt your device to emulate changes in a vehicle's sensors.
@@ -95,7 +95,7 @@ For the emulator version, the "Speed, Acceleration, and Fuel Level" widgets are 
 ![screen12](./doc_images/12.png)
  
 
-Live Mode
+Live Data Mode
 ---------
 
 Begin by connecting three OpenXC devices to Dweet.io using the special Dweet.io-integrated version of the OpenXC Enabler App (available in the [Releases](https://github.com/buglabs/openxc-buglabs/releases) tab).
