@@ -73,7 +73,7 @@ Source Files
 ###[openXCMonsoonDatasource.js](./Emulator\ Mode/openXCMonsoonDatasource.js)
 
 The Monsoon Datasource is a customized version of the [OpenXC Tracefile Datasource](../scripts/openXC-TracefileDatasource.js)  that takes one input JSON data file, subdivides it into 20 sub-datasources and iterates through to any connected widget at the user-defined refresh rate.  Widgets can attach to a sub-datasource by adding the sub-datasource index to the datasource name in the widget's Value field. (see screenshot below)
-![screen8](./doc_images/8.png)
+![screen8](./doc_images/Emulator/8.png)
 
 [Line 23](./Emulator\ Mode/openXCMonsoonDatasource.js#23) sets the number of data points between each sub-division.
 
