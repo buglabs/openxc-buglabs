@@ -1,9 +1,9 @@
 # Scripts
 
-Helpful Python scripts for converting OpenXC trace files into JSON data files optimized for browsers (and Freeboard.io!)
+Add-ons to OpenXC Freeboard (https://openxc.freeboard.io), and Helpful Python scripts for converting OpenXC trace files into JSON data files optimized for browsers (and Freeboard.io!)
 
-##OpenXC Freeboard Datasources/Widgets
-Javascript files for use with OpenXC.freeboard.io.  Install via the developer console in freeboard.
+##OpenXC Freeboard Plugins
+Javascript files for use with OpenXC.freeboard.io.  Install via the developer console in freeboard - either via your own host or using https://rawgit.com
 
 ###[openXC-AWS-Datasource.js](./openXC-AWS_Datasource.js)
 Datasource that retrieves trace files from AWS instance and allows user to show data in a static graph or as a playback simulation
