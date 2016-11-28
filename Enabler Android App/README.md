@@ -1,6 +1,6 @@
 Based off of the OpenXC Enabler Android application (v 6.1.6 from Play Store), this pre-release version integrates the sending of live OpenXC data to Dweet.io.  Used with the "Live Modes" of both Monsoon and Social Mobile templates.  
 
-Navigate to the [/bin](./bin) directory, or visit the [Releases](/Releases) tab to download the .apk, and install on your Android device using your favorite method (adb, etc).  
+Navigate to the [/bin](./bin) directory, or visit the [Releases](https://github.com/buglabs/openxc-buglabs/releases) tab to download the .apk, and install on your Android device using your favorite method (adb, etc).  
 
 Check out our [video tutorial](https://youtu.be/-ONi76sI9yc), or follow the instructions below:
 
