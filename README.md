@@ -7,7 +7,11 @@ Based off of the OpenXC Enabler Android application (v 6.1.6 from Play Store), t
 [Video Tutorial:](https://youtu.be/-ONi76sI9yc)
 Learn how to configure the Dweet.io-integrated Enabler application. This tutorial also covers how to manipulate the freeboard templates below.
 
+##[OpenXC-Freeboard](https://openxc.freeboard.io)
+OpenXC-Freeboard is a private instance that only users with a valid Ford email address can sign up for and use.  This dashboard service comes complete with templates and tutorials for getting started, and now includes OpenXC-DweetPro datasources.
+
 ##[OpenXC-DweetPro](./DweetPro)
+OpenXC-DweetPro combines the simplicity of dweet.io with new, easy-to-use APIs for storage, device management, alerts/notifications and reporting.
 
 ##[Monsoon Template](./Monsoon\Template)
 Watch as a fleet of 20 vehicles traveling on the highway encounter heavy rains along the journey.
