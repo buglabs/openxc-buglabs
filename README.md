@@ -7,7 +7,7 @@ Based off of the OpenXC Enabler Android application (v 6.1.6 from Play Store), t
 ### [Video Tutorial:](https://youtu.be/-ONi76sI9yc)
 Learn how to configure the Dweet.io-integrated Enabler application. This tutorial also covers how to manipulate the freeboard templates below.
 
-## [OpenXC DweetPro Android Application](https://github.com/buglabs/openxc-buglabs/releases/tag/0.9)
+## [OpenXC DweetPro Android Application](https://github.com/buglabs/openxc-buglabs/releases/tag/v2.0.0-prerelease)
 Based off of the OpenXC Enabler Android application (v 6.1.6 from Play Store), this pre-release version integrates the sending of live OpenXC data to DweetPro.io, which enables privacy, storage, and alerts.
 
 ## [OpenXC-Freeboard](https://openxc.freeboard.io)
