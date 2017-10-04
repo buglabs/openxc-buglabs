@@ -1,6 +1,8 @@
-Based off of the OpenXC Enabler Android application (v 6.1.6 from Play Store), this pre-release version integrates the sending of live OpenXC data to DweetPro.io, which enables security, storage, and alerts.
+# OpenXC DweetPro Android App
 
-Scroll down to the Download section to download the .apk, and install on your Android device using your favorite method (adb, etc).  
+This Private Ford Android application is based off of the OpenXC Enabler Android application (v 6.1.6 from Play Store). This pre-release version integrates the sending of live OpenXC data to a private and secure instance of [DweetPro.io](https://openxc.dweet.io), which enables security, storage, and alerts.
+
+Navigate to the [Releases section to download the .apk](https://github.com/buglabs/openxc-buglabs/releases/tag/v2.0.0-prerelease), and install on your Android device using your favorite method (adb, etc).  
 
 Follow the instructions below for set up:
 
