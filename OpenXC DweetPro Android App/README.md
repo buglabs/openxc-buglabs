@@ -46,7 +46,7 @@ Follow the instructions below for set up:
 
 _For more detailed documentation on the OpenXC Enabler Android App, please visit http://openxcplatform.com/android/getting-started.html_
 
-_User guide for DweetPro can be found here: https://github.com/buglabs/openxc-buglabs/tree/master/DweetPro
+[User guide for DweetPro](https://github.com/buglabs/openxc-buglabs/tree/master/DweetPro)
 
 _Source code for the Dweet.io Integrated version of the Enabler App can be found at https://github.com/buglabs/openxc-android/tree/enabler-dweet_
 
