@@ -48,5 +48,5 @@ _For more detailed documentation on the OpenXC Enabler Android App, please visit
 
 [User guide for DweetPro](https://github.com/buglabs/openxc-buglabs/tree/master/DweetPro)
 
-_Source code for the Dweet.io Integrated version of the Enabler App can be found at https://github.com/buglabs/openxc-android/tree/enabler-dweet_
+_Source code for the DweetPro.io Integrated version of the Enabler App can be found at https://github.com/buglabs/openxc-android/tree/openxc-dweetpro_
 
