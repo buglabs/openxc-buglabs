@@ -30,19 +30,44 @@ Follow the instructions below for set up:
 
 **Re-activate the "Send Data to Dweet.io" checkbox, then navigate back to the home screen.  If an OpenXC data source is configured and connected to the Enabler app, you can now see its data by navigating any browser to https://openxc.dweet.io/**
 
-**Follow instructions to GET your data in the Console:**
+## Using the OpenXC-Dweet Management UI
+
+### Console Page
+
+**Use the OXC-Dweet UI to test the APIs, Download your Data in .csv, and Set Alerts.
+
+**Navigate to the Console to GET your data:**
 
 <img src="https://github.com/buglabs/openxc-buglabs/blob/master/Enabler%20Android%20App/doc_images/GETexample.PNG" height="480" width="auto">
 
-**Download all data to CSV:**
+You can use the Console page of the OXCDweet UI to POST and GET secure dweets.
+
+### Collections Page
+
+**Download all data to CSV:** 
+
+Click on Collections at the top of the page. 
+Click on the collection (Mine) where your locked Thing-name lives.
+Click on the Download Icon, in the Actions column.
 
 <img src="https://github.com/buglabs/openxc-buglabs/blob/master/Enabler%20Android%20App/doc_images/Download1.PNG" height="240" width="auto">
 
+You can also move your thing to a new collection, add labels, remove a lock, or delete your thing from this page.
+
+### Thing Page
+
 **Create Alerts:**
+
+From Collection, Click on the Thing-name you want to create an alert for.
+Click on the **+Add Alert** icon.
+Enter details, click on **Add** icon
+Hint: If sending alerts to many people, use a group email account instead of adding multiple email addresses.
 
 <img src="https://github.com/buglabs/openxc-buglabs/blob/master/Enabler%20Android%20App/doc_images/addAlert.PNG" height="480" width="auto">
 
-**Or use [freeboard](https://openxc.freeboard.io) to visualize your data.**
+## Visualize your data
+
+**Use [freeboard](https://openxc.freeboard.io) to visualize your data.**
 
 _For more detailed documentation on the OpenXC Enabler Android App, please visit http://openxcplatform.com/android/getting-started.html_
 
