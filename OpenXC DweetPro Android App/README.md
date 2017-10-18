@@ -18,7 +18,9 @@ Follow the instructions below for set up:
 
 <img src="https://github.com/buglabs/openxc-buglabs/raw/master/Enabler%20Android%20App/doc_images/Settings.png" height="480" width="auto">
 
-**You will notice five new fields at the bottom related to configuring your DweetPro.io connection.  Make note of the "thing-name" that is automatically created for you, then activate the "Send Data to OpenXC Dweet" checkbox to begin funneling any attached OpenXC device data to dweet:**
+You will notice five new fields at the bottom related to configuring your DweetPro.io connection.  Make note of the "thing-name" that is automatically created for you. 
+
+**Click the "Send Data to OpenXC Dweet" checkbox to begin funneling any attached OpenXC device data to dweet:**
 
 <img src="https://github.com/buglabs/openxc-buglabs/raw/master/Enabler%20Android%20App/doc_images/Recording2.png" height="480" width="auto">
 
@@ -28,9 +30,11 @@ Follow the instructions below for set up:
 
 ### Adding Tokens
 
-**Email or Private message (Slack) your Master Key and Account Token to yourself.** 
+**Email or Private message your Master Key and Account Token to yourself.** 
 
-**If at any point you would like to set your own 'thing-name', first de-activate the "Send Data to Dweet.io" checkbox, then touch the "thing-name" field.  You can name it whatever you want (just don't included spaces), but we recommend something unique to minimize the possibility of name clashing:**
+Copy/Paste the Master Key and Account Token from email into the app.  You are now saving all data sent by your phone (VI, Tracefile, Phone Sensors).
+
+**Note: If at any point you would like to set your own 'thing-name', first de-activate the "Send Data to Dweet.io" checkbox, then touch the "thing-name" field.  You can name it whatever you want (just don't included spaces), but we recommend something unique to minimize the possibility of name clashing:**
 
 <img src="https://cloud.githubusercontent.com/assets/584962/11877657/bd304f1e-a4be-11e5-882c-5a47683f0532.png" height="480" width="auto">
 
