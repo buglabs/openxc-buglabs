@@ -124,6 +124,11 @@ Locks can be purchased and added to an account by Admin users only.  Managers ca
 
 Each Lock has three unique characteristics: Lock ID, Master Key and Read Key.
 
+To get a new lock, go to the Locks page (You must be signed in to the Management Portal). Next, Select **Buy Lock**
+Enter coupon: openxcdweetv2
+
+You will be given a new lock. Toggle the **Used/Unused** button to see the new lock credentials.
+
 #### _Lock ID_
 Used to lock a Thing.  At any given time, only one lock can be applied to one Thing.  The two remain bound together, until an Admin or Manager unlocks that Thing.  After unlocking a Thing, the Lock that was associated with that Thing becomes free to use with any unprovisioned Thing in the account.
 
@@ -138,6 +143,12 @@ When a Thing Token is provided in the request header, the Lock’s Read Key can 
 
 ### Collection
 A Collection is a group of locked Things, used for organizational purposes.  When locking/provisioning a Thing, it must be added to a Collection.  Unlocked/unprovisioned things are held in a special Collection called “UNPROVISIONED”.
+
+Creating a new Thing inside of a specific Collection will auto-assign that new Thing an Unused Lock.
+You can unlock a Thing, or Move a Thing from one Collection to another.
+
+### Labels
+Labels are a way to group Things in multiple ways, outside of any Collection restriction. You can use the GET /V2/things/label to see all Things with a certian label.
 
 ## DweetPro Tutorial, continued
 
