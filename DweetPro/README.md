@@ -68,7 +68,7 @@ Note: You must use a valid Ford email, as well as your CDSID.
 
 12. We now have all of the credentials necessary to save our OXC app data to DweetPro storage.  Email the Master Key and Account Token to yourself.  Open email on your phone and copy the Key and Token into the OpenXC-DweetPro App.
 
-[Continue with App setup](https://github.com/buglabs/openxc-buglabs/tree/master/OpenXC%20DweetPro%20Android%20App)
+[Continue with App setup](https://github.com/buglabs/openxc-buglabs/blob/master/OpenXC%20DweetPro%20Android%20App/README.md#adding-tokens)
 
 ## Key Concepts
 
