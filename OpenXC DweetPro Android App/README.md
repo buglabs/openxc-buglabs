@@ -4,7 +4,7 @@ This Private Ford Android application is based off of the OpenXC Enabler Android
 
 ## Install the App
 
-Navigate to the [Releases section to download the .apk](https://github.com/buglabs/openxc-buglabs/releases/tag/v2.0.0-prerelease), and install on your Android device using your favorite method (adb, etc).  
+Navigate to the [Releases section to download the .apk](https://github.com/buglabs/openxc-buglabs/releases/latest), and install on your Android device using your favorite method (adb, etc).  
 
 Follow the instructions below for set up:
 
